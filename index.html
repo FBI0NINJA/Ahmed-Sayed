@@ -8,14 +8,26 @@
 
 <title>Ahmed Sayed | Developer</title>
 
+<link rel="icon" type="image/png" href="favicon.png">
+
 <link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
 </head>
 
 <body>
+
+<!-- LOADER -->
+
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
@@ -26,6 +38,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <a href="#contact">Contact</a>
 
 </nav>
+
+<!-- PARTICLES BACKGROUND -->
+
+<div id="particles-js"></div>
 
 <!-- HOME -->
 
@@ -39,16 +55,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <p class="job">Web Developer</p>
 
-<p>Egypt - Qalyubia</p>
+<p class="info"><i class="fa-solid fa-location-dot"></i> Egypt - Qalyubia</p>
+<p class="info"><i class="fa-solid fa-phone"></i> 01012480784</p>
 
 <div class="social">
 
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-<a href="#"><i class="fa-brands fa-facebook"></i></a>
-<a href="#"><i class="fa-brands fa-youtube"></i></a>
-<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://facebook.com/ninjafbi1"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://youtube.com/@MR.mathsAS"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://github.com/FBI0NINJA"><i class="fa-brands fa-github"></i></a>
 
 </div>
+
+<div class="divider"><i class="fa-solid fa-code"></i></div>
 
 </section>
 
@@ -62,14 +81,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <p>
 
-I am Ahmed Sayed, a passionate web developer from Egypt.
-I love building modern websites and desktop applications.
-
-I enjoy learning new technologies and improving my programming skills.
+I am <strong>Ahmed Sayed</strong>, a passionate web developer from Egypt.
+I enjoy building modern, responsive and fast websites using modern technologies.
 
 </p>
 
 </div>
+
+<div class="divider"><i class="fa-solid fa-code"></i></div>
 
 </section>
 
@@ -101,27 +120,9 @@ I enjoy learning new technologies and improving my programming skills.
 <h3>Python</h3>
 </div>
 
-<div class="skill-card">
-<i class="fa-solid fa-code"></i>
-<h3>C</h3>
 </div>
 
-<div class="skill-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>C++</h3>
-</div>
-
-<div class="skill-card">
-<i class="fa-solid fa-desktop"></i>
-<h3>Desktop Apps</h3>
-</div>
-
-<div class="skill-card">
-<i class="fa-solid fa-gears"></i>
-<h3>OOP</h3>
-</div>
-
-</div>
+<div class="divider"><i class="fa-solid fa-code"></i></div>
 
 </section>
 
@@ -130,3 +131,53 @@ I enjoy learning new technologies and improving my programming skills.
 <section id="projects" class="section">
 
 <h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+
+<img src="system.jpg">
+
+<h3>Ahmed Sayed System</h3>
+
+<a href="https://github.com/FBI0NINJA/ahmed_sayed_system">View</a>
+
+</div>
+
+</div>
+
+<div class="divider"><i class="fa-solid fa-code"></i></div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+<a href="https://maps.google.com/?q=Qalyubia,Egypt">
+<i class="fa-solid fa-location-dot"></i>
+Qalyubia Egypt
+</a>
+
+<a href="https://wa.me/201012480784">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+</a>
+
+<a href="mailto:ninjaadmen1@email.com">
+<i class="fa-solid fa-envelope"></i>
+Email
+</a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
