@@ -1,18 +1,26 @@
-window.addEventListener("load",()=>{
+// loader fix
 
-document.getElementById("loader").style.display="none";
+window.onload = function () {
 
-});
+const loader = document.getElementById("loader");
 
-const text="Ahmed Sayed";
+if(loader){
+loader.style.display = "none";
+}
 
-let index=0;
+}
+
+
+// typing animation
+
+const text = "Ahmed Sayed";
+let index = 0;
 
 function type(){
 
-if(index<text.length){
+if(index < text.length){
 
-document.querySelector(".typing").innerHTML+=text.charAt(index);
+document.querySelector(".typing").innerHTML += text.charAt(index);
 
 index++;
 
@@ -24,20 +32,23 @@ setTimeout(type,120);
 
 type();
 
-const sections=document.querySelectorAll(".section");
+
+// scroll animation
+
+const sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll",()=>{
 
-const top=window.scrollY;
+const top = window.scrollY;
 
 sections.forEach(sec=>{
 
-const offset=sec.offsetTop-400;
+const offset = sec.offsetTop - 400;
 
-if(top>=offset){
+if(top >= offset){
 
-sec.style.opacity="1";
-sec.style.transform="translateY(0)";
+sec.style.opacity = "1";
+sec.style.transform = "translateY(0)";
 
 }
 
@@ -45,11 +56,16 @@ sec.style.transform="translateY(0)";
 
 });
 
+
+// particles check
+
+if(typeof particlesJS !== "undefined"){
+
 particlesJS("particles-js",{
 
 particles:{
 
-number:{value:60},
+number:{value:50},
 
 size:{value:3},
 
@@ -63,3 +79,5 @@ color:"#7c5cff"
 }
 
 });
+
+}
