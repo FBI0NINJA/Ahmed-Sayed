@@ -1,13 +1,8 @@
-// loader
-
 window.addEventListener("load",()=>{
 
 document.getElementById("loader").style.display="none";
 
 });
-
-
-// typing animation
 
 const text="Ahmed Sayed";
 
@@ -29,9 +24,6 @@ setTimeout(type,120);
 
 type();
 
-
-// scroll reveal
-
 const sections=document.querySelectorAll(".section");
 
 window.addEventListener("scroll",()=>{
@@ -52,9 +44,6 @@ sec.style.transform="translateY(0)";
 });
 
 });
-
-
-// particles
 
 particlesJS("particles-js",{
 
